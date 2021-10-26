@@ -1,0 +1,113 @@
+ .navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+  }
+  
+   .navbar .left {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+
+
+  
+  .navbar .left h1 {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .navbar .right {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .navbar .right button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar .right svg {
+    font-size: 40px;
+  }
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  
+  .navbar #open h1 {
+    display: none;
+  }
+  
+  .navbar #close h1 {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenLink {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar .left #close .hiddenLink {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .navbar .right a {
+      width: 70px;
+    }
+    .navbar .left {
+      padding-left: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .right a {
+      display: none;
+    }
+  
+    .navbar .right {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .right button {
+      display: inherit;
+    }
+  }
+  
+
+  /*
+  MEDIA QUERYS: permet au contenu de la page de s'ajuster selon la taille
+  de la fenetre
+  */
+  @media only screen and (min-width: 600px) {
+    .navbar .right button {
+      display: none;
+    }
+  
+    .hiddenLink {
+      display: none;
+    }
+  }
+   
